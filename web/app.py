@@ -22,7 +22,7 @@ def two():
 
 @app.route("three")
 def three():
-    return "3"
+    return "three"
 
 
 if __name__ == '__main__':
