@@ -1,9 +1,12 @@
 import os
 
+
 DEBUG = os.environ.get("DEBUG", "false") == "true"
+
 
 from flask import Flask
 app = Flask(__name__)
+
 
 @app.route('/')
 def hello_world():
@@ -17,7 +20,7 @@ def one():
 
 @app.route("two")
 def two():
-    return "two = 2"
+    return "two"
 
 
 @app.route("three")
