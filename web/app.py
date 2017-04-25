@@ -9,5 +9,9 @@ app = Flask(__name__)
 def hello_world():
     return 'Flaska Dockerized'
 
+@app.route("two")
+def two():
+    return "two"
+
 if __name__ == '__main__':
     app.run(port=8080, host="0.0.0.0", debug=DEBUG)
