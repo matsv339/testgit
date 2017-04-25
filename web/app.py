@@ -11,7 +11,8 @@ def hello_world():
 
 @app.route("two")
 def two():
-    return "two"
+    return "two = 2"
+
 
 if __name__ == '__main__':
     app.run(port=8080, host="0.0.0.0", debug=DEBUG)
