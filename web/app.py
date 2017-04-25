@@ -20,5 +20,10 @@ def two():
     return "two = 2"
 
 
+@app.route("three")
+def three():
+    return "3"
+
+
 if __name__ == '__main__':
     app.run(port=8080, host="0.0.0.0", debug=DEBUG)
